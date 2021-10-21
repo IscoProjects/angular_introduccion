@@ -1,0 +1,14 @@
+<h2> {{ titulo }} </h2>
+<h2>Contador App</h2>
+
+<button (click)=" actualizar(+1) "> + 1 </button>
+<span> {{ numero }} </span>
+<button (click)=" actualizar(-1) "> - 1 </button>
+
+
+<h2>Acumulador App</h2>
+<h3>La base es: <strong> {{ base }} </strong></h3>
+
+<button (click)=" acumulador(+ base) "> + {{ base }} </button>
+<span> {{ resultado }} </span>
+<button (click)=" acumulador(- base) "> - {{ base }} </button>

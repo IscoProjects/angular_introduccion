@@ -1,0 +1,17 @@
+<p>Listado de Heroes de DC</p>
+
+<h3 *ngIf="deletedHeroe.length > 0; else noTouched">{{deletedHeroe}} ha sido eliminado</h3>
+
+<ng-template #noTouched>
+  <h3>No se ha borrado nada aun</h3>
+</ng-template>
+
+<button (click)="deleteItem()">
+  Eliminar Heroe
+</button>
+
+<ul>
+  <li *ngFor="let item of heroes; let i = index">
+    {{i + 1}} - {{item}}
+  </li>
+</ul>
